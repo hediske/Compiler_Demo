@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="35" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="9999" styleClass="custom-panel-home" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.compiler.gui.controller.HomePanelController">
+   <children>
+         <MenuBar layoutY="5.0" prefHeight="27.0" prefWidth="600.0" stylesheets="@../style/menuHome.css">
+            <menus>
+               <Menu text="File">
+                  <items>
+                     <MenuItem text="New" />
+                     <MenuItem text="Open" onAction="#loadFile"/>
+                     <MenuItem text="Save" />
+                  </items>
+               </Menu>
+               <Menu text="Language">
+                  <items>
+                     <MenuItem text="Add" />
+                     <MenuItem text="Check" />
+                  </items>
+               </Menu>
+               <Menu text="About">
+                  <items>
+                     <MenuItem text="About me" onAction="#ShowAboutMe"/>
+                     <MenuItem text="Help" onAction="#help" />
+                  </items>
+               </Menu>
+            </menus>
+         </MenuBar>
+   </children>
+</AnchorPane>

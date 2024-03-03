@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="com.compiler.gui.AppController">
+<top>
+    <fx:include source="HomePanel.fxml" fx:id="home"/>
+</top>
+<left>
+    <fx:include source="SidePanel.fxml" fx:id="side"/>
+</left>
+<center>
+    <fx:include source="MainComponent.fxml" fx:id="main"/>
+</center>
+</BorderPane>

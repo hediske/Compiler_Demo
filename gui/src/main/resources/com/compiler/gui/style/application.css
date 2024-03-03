@@ -1,0 +1,13 @@
+.custom-panel-home{
+    -fx-border-color:black;
+    -fx-background-color:#242526;
+    -fx-border-width : 0 0 0.5 0;
+
+}
+.Side-Panel-Layout{ 
+    -fx-border-width:0;
+    -fx-border-radius :5px;
+    -fx-background-radius :5px;
+    -fx-background-color:#242526;
+
+}
