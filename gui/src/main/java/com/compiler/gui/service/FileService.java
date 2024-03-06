@@ -1,4 +1,4 @@
-package com.compiler.service;
+package com.compiler.gui.service;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -32,30 +32,24 @@ public class FileService {
             if(file==null){
                 return;
             }
-            File tempFile;
-            try{
-                tempFile = File.createTempFile("temp", ".txt");
-            }
-            catch(IOException e){
-                System.out.println("temporary file error");
-                return;
-            }
-            BufferedReader FileContent = new BufferedReader(new FileReader(file));
-            BufferedWriter TempFileContent = new BufferedWriter(new FileWriter(tempFile));
-            String line;
-            while((line = FileContent.readLine())!=null){
-                TempFileContent.write(line);
-                TempFileContent.flush();
-                TempFileContent.newLine();
-            }
-            FileContent.close();
-            TempFileContent.close();
-            MediatorSpanImpl.getInstance().MainController.onFileLoad(tempFile.getAbsolutePath());
+            System.out.println(file.getAbsolutePath());
+            MediatorSpanImpl.getInstance().MainController.onFileLoad(file.getAbsolutePath());
         }
         catch(Exception e){
             Alert alert = new Alert(AlertType.ERROR, "Error opening the File ", ButtonType.CLOSE);
             alert.show();
+            e.printStackTrace();
         }
+    }
+
+    public void saveFile(Stage stage){
+        MediatorSpanImpl.getInstance().MainController.SaveFile();
+    }
+
+    public static String NameExtractor(String Path){
+        File file = new File(Path);
+        String fileName = file.getName();
+        return fileName;
     }
 
 

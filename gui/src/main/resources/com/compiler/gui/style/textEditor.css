@@ -1,0 +1,18 @@
+#textdata {
+    -fx-border-width: 0px;
+    -fx-control-inner-background: #2E2A2E; 
+    -fx-background-color: transparent; 
+    -fx-padding: 10px;
+    -fx-font-family: "Arial";
+    -fx-font-size: 14px;
+}
+
+.HBox {
+    -fx-background-color: #2E2A2E; 
+}
+.text-area:focused {
+    -fx-focus-color: transparent;
+}
+.HBox:focused {
+    -fx-focus-color: transparent;
+}

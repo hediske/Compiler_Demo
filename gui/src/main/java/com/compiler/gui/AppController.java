@@ -6,7 +6,6 @@ import com.compiler.gui.controller.MainPanelController;
 import com.compiler.gui.controller.SidePanelController;
 
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 
 public class AppController {
     @FXML
@@ -20,5 +19,6 @@ public class AppController {
         MediatorSpanImpl.getInstance().registerControllerHome(homeController);
         MediatorSpanImpl.getInstance().registerControllerSpan(sideController);
         MediatorSpanImpl.getInstance().registerControllerMain(mainController);
+        
     }
 }

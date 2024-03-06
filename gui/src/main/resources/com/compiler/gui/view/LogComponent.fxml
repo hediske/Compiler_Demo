@@ -3,8 +3,8 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.HBox?>
 
-<HBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<HBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="com.compiler.gui.controller.LoggerController">
    <children>
-      <TextArea fx:id="logs" stylesheets="@../style/logPanel.css" layoutX="12.0" layoutY="200.0" wrapText="true" editable="false" prefHeight="200.0" prefWidth="576.0" style="-fx-background-color: #202124;" HBox.hgrow="ALWAYS" />
+      <TextArea fx:id="logs" stylesheets="@../style/logPanel.css" layoutX="12.0" layoutY="200.0" editable="false" wrapText="true" prefHeight="200.0" prefWidth="576.0"  HBox.hgrow="ALWAYS" />
    </children>
 </HBox>

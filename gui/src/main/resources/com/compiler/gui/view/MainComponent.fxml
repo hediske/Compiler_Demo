@@ -18,11 +18,10 @@
          </children>
       </HBox>
         <HBox fx:id="container" prefHeight="100.0" prefWidth="471.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" HBox.hgrow="ALWAYS">
-         <SplitPane dividerPositions="0.875" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" HBox.hgrow="ALWAYS">
+         <SplitPane fx:id="split" dividerPositions="0.875" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" HBox.hgrow="ALWAYS">
            <items>
-             <AnchorPane fx:id="textArea" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
-             </AnchorPane>
-               <fx:include source="LogComponent.fxml" />
+               <fx:include source ="TextEditor.fxml" fx:id="text" />
+               <fx:include source ="LogComponent.fxml" fx:id="logger" />
            </items>
          </SplitPane>
         </HBox>

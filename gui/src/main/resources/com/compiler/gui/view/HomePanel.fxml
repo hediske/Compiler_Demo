@@ -13,7 +13,7 @@
                   <items>
                      <MenuItem text="New" />
                      <MenuItem text="Open" onAction="#loadFile"/>
-                     <MenuItem text="Save" />
+                     <MenuItem text="Save" onAction="#saveFile"/>
                   </items>
                </Menu>
                <Menu text="Language">

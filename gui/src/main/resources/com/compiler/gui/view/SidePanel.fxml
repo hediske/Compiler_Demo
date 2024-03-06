@@ -8,7 +8,7 @@
    <children>
       <Button styleClass="no-display-Button" alignment="CENTER" mnemonicParsing="false"  fx:id="newFile"/>
       <Button styleClass="no-display-Button" alignment="CENTER" mnemonicParsing="false"  fx:id="open" onAction="#loadFile" />
-      <Button styleClass="no-display-Button" alignment="CENTER" mnemonicParsing="false"  fx:id="save"/>
+      <Button styleClass="no-display-Button" alignment="CENTER" mnemonicParsing="false"  fx:id="save" onAction="#saveFile"/>
       <Button styleClass="no-display-Button" alignment="CENTER" mnemonicParsing="false"  fx:id="compile" />
    </children>
    <padding>

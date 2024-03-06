@@ -1,8 +1,7 @@
 package com.compiler.gui.controller;
 
-import java.io.File;
 
-import com.compiler.service.FileService;
+import com.compiler.gui.service.FileService;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -91,7 +90,9 @@ public class SidePanelController {
 
     @FXML
     public void saveFile(ActionEvent e){
-
+        Button node= (Button) e.getSource();
+        Stage stage = (Stage) node.getScene().getWindow();
+        fileservice.saveFile(stage);
     }
     @FXML
     public void openFile(ActionEvent e){

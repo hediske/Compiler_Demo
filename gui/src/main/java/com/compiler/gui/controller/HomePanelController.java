@@ -1,14 +1,10 @@
 package com.compiler.gui.controller;
 
-import java.io.File;
 
-import com.compiler.gui.Communication.MediatorSpanImpl;
-import com.compiler.service.FileService;
+import com.compiler.gui.service.FileService;
 
-import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.Node;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.MenuItem;
@@ -56,5 +52,12 @@ public class HomePanelController {
         MenuItem node= (MenuItem) e.getSource();
         Stage stage = (Stage) node.getParentPopup().getOwnerWindow();
         fileservice.loadFile("Please provide the file to compile   ! ", stage);
+    }
+
+    @FXML
+    public void saveFile(ActionEvent e){
+        MenuItem node= (MenuItem) e.getSource();
+        Stage stage = (Stage) node.getParentPopup().getOwnerWindow();
+        fileservice.saveFile(stage);
     }
 }

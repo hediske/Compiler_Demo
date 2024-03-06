@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox prefHeight="200.0" prefWidth="1252.0" styleClass="HBox" stylesheets="@../style/textEditor.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.compiler.gui.controller.TextEditorController">
+   <children>
+      <TextArea fx:id="textdata" editable="true" layoutX="12.0" layoutY="200.0" prefHeight="200.0" prefWidth="2077.0" style="-fx-padding: 10px;" text="ljlkl&#10;" wrapText="true" HBox.hgrow="ALWAYS">
+   </TextArea>
+   </children>
+
+</HBox>
